@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faraz Ali Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e16dff1042.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="img/FA.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Designer/Developer</p>
+                <h1>Hi, I'm <span class="O">Faraz Ali</span> From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+<!-- ------------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="img/Farazillus.png" alt="Illustration"></div>
+                <div class="about-col-2"><h1 class="sb" >About Me</h1>
+                <p>Hi, My name is Faraz Ali. I'm from small city of Pakistan.
+                    After my high school I went to Abu Dhabi to earn some living to 
+                    support my family. Currently, I'm in Abu Dhabi working as a 
+                    delivery boy at a cafe called Smart. I did my high school in
+                    Computer sciences.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-content" id="skills">
+                    <ul>
+                        <li><span>HTML/CSS/JavaScript</span><br>Developing and designing Web Applications</li>
+                        <li><span>Python</span><br>Developing small softwares and automation</li>
+                        <li><span>Illustrator/Photoshop</span><br>Graphics Designing such as editing photos and making logos, banners and others</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Working as Delivery boy at Smart Cafe in Abu Dhabi</li>
+                        <li><span>2020 - 2022</span><br>Teached English to students from grade 5 to 8 in a local school.</li>
+                        <li><span>2016 - Till</span><br>Freelancing on Fiverr, upwork and Freelancer as Graphics Designer.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span><br>High School/ Grade 12th from Local Govt. Higher Secondary School</li>
+                        <li><span>2018</span><br>Metriculation/Grade 10th from Local Govt. Higher Secondary School</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+<!------------Services------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sb">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Development</h2>
+                <p>Creating web pages and apps using HTML, CSS and javaScript. Using these languges I design and 
+                    develop optimized web apps.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Development</h2>
+                <p>Developing small softwares and automating different tasks using Python programming language. can also 
+                    do some tasks of data science.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Graphics Designing</h2>
+                <p>Designing logo, business cards, banner ads and much more using Adobe Photoshop and Illustrator. Making 
+                    art Illustration using Adobe Illustrator.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------Portfolio-------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sb">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/Webillus.jpg" alt="Image">
+                <div class="layer">
+                    <h3>Web Development</h3>
+                    <p>Made responsive websites for resturents and hotels. Also made online shopping websites</p>
+                    <a href="Ud.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/Sofwareillus.jpg" alt="Image">
+                <div class="layer">
+                    <h3>Software Development</h3>
+                    <p>Made Point Of Sale softwares and automated different apps and chats platforms</p>
+                    <a href="Ud.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/gillus.jpg" alt="Image">
+                <div class="layer">
+                    <h3>Graphics Designing</h3>
+                    <p>Made logos, banner and packaging for different clients and editing and retouching photos</p>
+                    <a href="Ud.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <button onclick="location.href='Ud.html'" class="btn">See More</button>
+    </div>
+</div>
+<!---------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sb">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> farazali2149@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+971544874730</p>
+                <div class="social-icon">
+                    <a href="https://www.instagram.com/ahmedshah21490/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/faraz-ali-3626a6238/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div>
+                    <a href="" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+            <div class="contant-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright@Faraz Ali</p>
+    </div>
+</div>
+    <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents")
+            function opentab(tabname) {
+            for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-content");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-content");
+            }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwZM8ivbrr4YFXa1IiN9lv9fPWzyTQ1QKUro0TSr-tgZ5E0v3AWJLK2OWQ3W2GS1df_eQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML = "Message sent successfully" 
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
