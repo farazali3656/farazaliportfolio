@@ -161,11 +161,18 @@ nav ul li a:hover::after{
 #portfolio{
     padding: 50px 0;
 }
+.heading{
+    position: relative;
+    align-self: center;
+    color: #ff8a00;
+}
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    grid-row: inherit;
+    grid-row-gap: 50px;
+    margin: auto;
+    margin-top: 30px;
+    width: 70%;
 }
 .work{
     border-radius: 10px;
